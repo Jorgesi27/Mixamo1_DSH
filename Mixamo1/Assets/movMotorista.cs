@@ -58,6 +58,8 @@ public class movPlayer : MonoBehaviour
         if(Input.GetButtonDown("Fire3")){ animator.SetTrigger("Atacar"); }
         if(Input.GetButtonDown("Fire2")){ animator.SetTrigger("Saludar"); }
         if(Input.GetButtonDown("Cancel")){ animator.SetTrigger("Bailar"); }
+        if(Input.GetButtonDown("Submit")){ animator.SetTrigger("Aplaudir"); }
+        if(Input.GetButtonDown("j")){ animator.SetTrigger("Enfado"); }
 
         movement.y = gravity*Time.deltaTime;
         player.Move(movement);
